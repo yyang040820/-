@@ -20,7 +20,7 @@
 4 \
 5 \
 0 1 \
-1 3 \
+1 3
 
 #### 简洁回答
 预先计算前缀和数组 `prefix_sum[i] = sum(nums[0..i])`，然后任意区间 `[start,end]` 的和可通过 `prefix_sum[end] - (start > 0 ? prefix_sum[start-1] : 0)` 在 O(1) 时间内获得，从而将单次查询从 O(n) 优化到 O(1)，总复杂度降为 O(n + m)，额外空间 O(n)。
