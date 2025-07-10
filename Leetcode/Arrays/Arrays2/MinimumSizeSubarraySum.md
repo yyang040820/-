@@ -46,6 +46,8 @@ def minSubArrayLen(self, target: int, nums: List[int]) -> int:
             return res
         else:
             return 0
+```
+
 ```python
 //前缀和+Binary Search。时间复杂度O(nlogn);空间复杂度:O(n)
 def minSubArrayLen(self, target: int, nums: List[int]) -> int:
