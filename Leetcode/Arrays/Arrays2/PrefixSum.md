@@ -27,30 +27,23 @@
 
 
 #### 详细回答
-假设数组长度为 \(n\)，需要回答 \(m\) 次区间和查询，**暴力**做法的时间复杂度为 \(O(m \times n)\)。由于数组元素不变，我们可以：
+假设数组长度为 n，需要回答 m 次区间和查询，暴力做法的时间复杂度为 O(m × n)。由于数组元素不变，我们可以：
 
 1. **构建前缀和数组**  
-   - 新建长度为 \(n\) 的数组 `prefix_sum`。  
-   - 对于每个索引 \(i\)（0-based），令  
-     \[
-       \text{prefix\_sum}[i]
-         = \sum_{k=0}^{i} \text{nums}[k].
-     \]
-   - 也就是说 `prefix_sum[i]` 存储从数组开头到第 \(i\) 个元素（双端都包含）的子数组和。
+   - 新建长度为 n 的数组 `prefix_sum`。  
+   - 对于每个索引 i（从 0 开始），令  
+     `prefix_sum[i] = nums[0] + nums[1] + … + nums[i]`。  
+   - 也就是说，`prefix_sum[i]` 存储了从数组开头到第 i 个元素（含 i）的子数组和。
 
-2. **\(O(1)\) 时间回答任意区间 \([\,\text{start},\text{end}\,]\)**  
-   - 若 \(\text{start}>0\)，则  
-     \[
-       \sum_{k=\text{start}}^{\text{end}} \text{nums}[k]
-       = \text{prefix\_sum}[\text{end}] - \text{prefix\_sum}[\text{start}-1].
-     \]
-   - 若 \(\text{start}=0\)，直接取  
-     \[
-       \sum_{k=0}^{\text{end}} \text{nums}[k]
-       = \text{prefix\_sum}[\text{end}].
-     \]
+2. **O(1) 时间回答任意区间 [start, end]**  
+   - 如果 `start > 0`，则  
+     `sum = prefix_sum[end] - prefix_sum[start - 1]`。  
+   - 如果 `start == 0`，则  
+     `sum = prefix_sum[end]`。
 
-通过预处理前缀和，整体时间复杂度降为 \(O(n + m)\)，空间额外使用 \(O(n)\)。
+通过预处理前缀和，整体时间复杂度降为 O(n + m)，额外空间使用 O(n)。
+
+
 
 
 ```python
