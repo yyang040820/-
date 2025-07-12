@@ -13,14 +13,14 @@ Example 1:\
 \
 Input: head = [3,2,0,-4], pos = 1
 Output: tail connects to node index 1
-Explanation: There is a cycle in the linked list, where tail connects to the second node.\
+Explanation: There is a cycle in the linked list, where tail connects to the second node.
 
 Example 2:\
 ![这是图片](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
 
 Input: head = [1,2], pos = 0
 Output: tail connects to node index 0
-Explanation: There is a cycle in the linked list, where tail connects to the first node.\
+Explanation: There is a cycle in the linked list, where tail connects to the first node.
 
 Example 3:\
 ![这是图片](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png) 
