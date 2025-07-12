@@ -6,7 +6,7 @@
 
 进阶：你能尝试使用一趟扫描实现吗？
 
-![例子1](https://file1.kamacoder.com/i/algo/20210510085957392.png)
+![例子1](https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg)
 
 输入：head = [1,2,3,4,5], n = 2 输出：[1,2,3,5]
 
