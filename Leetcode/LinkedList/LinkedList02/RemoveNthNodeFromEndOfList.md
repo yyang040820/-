@@ -1,4 +1,4 @@
-## 19. 删除链表的倒数第N个节点
+## 19. 删除链表的倒数第N个节点(需重点复习）
 
 题目链接:[https://leetcode.com/problems/remove-nth-node-from-end-of-list/]
 
