@@ -8,25 +8,24 @@
 
 说明：不允许修改给定的链表。
 
-Example 1:
+Example 1:\
 ![这是图片](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
-
+\
 Input: head = [3,2,0,-4], pos = 1
 Output: tail connects to node index 1
-Explanation: There is a cycle in the linked list, where tail connects to the second node.
-Example 2:
+Explanation: There is a cycle in the linked list, where tail connects to the second node.\
+Example 2:\
 ![这是图片](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
 
 Input: head = [1,2], pos = 0
 Output: tail connects to node index 0
-Explanation: There is a cycle in the linked list, where tail connects to the first node.
-Example 3:
-
-
+Explanation: There is a cycle in the linked list, where tail connects to the first node.\
+Example 3:\
+![这是图片](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png) 
 Input: head = [1], pos = -1
 Output: no cycle
 Explanation: There is no cycle in the linked list.
-![这是图片](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png) 
+
 
 Constraints:
 
