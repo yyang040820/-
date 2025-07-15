@@ -1,6 +1,8 @@
 ## 344.Reverse String
 
 题目链接:[https://leetcode.com/problems/reverse-string/description/]
+
+
 Write a function that reverses a string. The input string is given as an array of characters s.
 
 You must do this by modifying the input array in-place with O(1) extra memory.
@@ -24,7 +26,7 @@ Output: ["h","a","n","n","a","H"]
 
 关键点：
 - 输入是 `List[str]`，是可变对象，支持原地修改；
-- 如果输入是字符串（`str` 类型），由于字符串在 Python 中是不可变的，就不能用下标赋值，必须先转换为 `list`，反转后再用 `''.join()` 拼回字符串。
+- 如果输入是字符串（`str` 类型），由于字符串在 Python 中是不可变的，就不能用index直接赋值，必须先转换为 `list`，反转后再用 `''.join()` 拼回字符串。
 
 ---
 ```python
